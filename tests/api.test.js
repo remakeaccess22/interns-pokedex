@@ -13,7 +13,7 @@ const mockPokemonService = {
 jest.unstable_mockModule('../src/services/pokemonService.js', () => mockPokemonService);
 
 // Import app after mocking
-const { default: app } = await import('../src/app.js');
+const { default: app } = await import('../src/index.js');
 
 describe('Pokemon API Endpoints', () => {
   beforeEach(() => {
